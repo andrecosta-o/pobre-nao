@@ -9,6 +9,7 @@ public class PobreNao {
 	public String cpf;
 	public String telefone;
 	public String email;
+	public String endereco;
 	
 	public void exibirDados () {
 		System.out.println("ID: " + id);
@@ -34,7 +35,7 @@ public class PobreNao {
 	        Scanner scanner = new Scanner(System.in);
 
 	        System.out.println("\n--- Motivação para começar a guardar dinheiro ---");
-	        System.out.print("Digite sua motivação: ");
+	        System.out.print("Qual a sua motivação?: ");
 	        String motivacao = scanner.nextLine();
 	        System.out.println("Motivação registrada: " + motivacao);
 	    }
@@ -43,8 +44,8 @@ public class PobreNao {
 	    public void registrarObstaculos() {
 	        Scanner scanner = new Scanner(System.in);
 
-	        System.out.println("\n--- O que mais atrapalha sua disciplina financeira ---");
-	        System.out.print("Digite os obstáculos: ");
+	        System.out.println("\n--- O que mais atrapalha sua disciplina financeira? ---");
+	        System.out.print("Obstáculos: ");
 	        String obstaculos = scanner.nextLine();
 	        System.out.println("Obstáculos registrados: " + obstaculos);
 	    }
@@ -53,8 +54,8 @@ public class PobreNao {
 	    public void registrarMensagemFuturo() {
 	        Scanner scanner = new Scanner(System.in);
 
-	        System.out.println("\n--- Mensagem para você mesmo daqui a um ano ---");
-	        System.out.print("Digite sua mensagem: ");
+	        System.out.println("\n--- Deixe uma mensagem para você mesmo, ela aparecerá daqui a um ano se você suportar o desafio   ---");
+	        System.out.print("Para o meu EU do futuro: ");
 	        String mensagem = scanner.nextLine();
 	        System.out.println("Mensagem registrada: " + mensagem);
 	    }
@@ -64,7 +65,7 @@ public class PobreNao {
 	        Scanner scanner = new Scanner(System.in);
 
 	        System.out.println("\n--- Objetivo financeiro para o próximo ano ---");
-	        System.out.print("Digite seu objetivo: ");
+	        System.out.print("Quanto você quer guardar em um ano?: ");
 	        String objetivo = scanner.nextLine();
 	        System.out.println("Objetivo registrado: " + objetivo);
 	    }

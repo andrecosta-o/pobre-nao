@@ -1,23 +1,40 @@
 package gf.oracle.programacao;
 
+import java.util.Scanner;
+
 public class PobreNaoTeste {
 	public static void main (String[] args) {
 		
-		PobreNao usuario = new PobreNao();
-		usuario.id = 1;
-		usuario.nome = "Carlos Souza";
-		usuario.cpf = "12345678900";
-		usuario.telefone = "(11) 99999-99999";
-		usuario.email = "carlos@gmail.com";
+		Scanner sc = new Scanner (System.in); 
 		
-		usuario.exibirDados();
-
-        // Calculando a distribuição do salário
-        double salario = 3500.00;
-        usuario.calcularDistribuicaoSalario(salario);
+		
+		
+		PobreNao usuario = new PobreNao();
+		
+		
         usuario.registrarMotivacao();
         usuario.registrarObstaculos();
         usuario.registrarMensagemFuturo();
         usuario.registrarObjetivoAnual();
+
+        usuario.id = 1;
+		System.out.println("Nome completo: ");
+		usuario.nome = sc.nextLine();
+		System.out.println("CPF: ");
+		usuario.cpf = sc.nextLine();
+		System.out.println("Telefone: ");
+		usuario.telefone = sc.nextLine();
+		System.out.println("Seu melhor e-mail: ");
+		usuario.email = sc.nextLine();
+		System.out.println("Seu endereco: ");
+		usuario.endereco = sc.nextLine();
+		System.out.println("Sua renda mensal");
+		double salario = sc.nextDouble();
+        
+        
+        usuario.calcularDistribuicaoSalario(salario);
+
+        
+        usuario.exibirDados();
     }
 }
